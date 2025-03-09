@@ -16,3 +16,13 @@ spec:
                 name: myservice
                 port:
                   number: 8080
+    - host: myservice1.info
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myservice1
+                port:
+                  number: 8080
